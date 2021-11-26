@@ -30,4 +30,4 @@ Pore Size Diameter is calculated as the diameter of a circle that has the same a
 <img src="images/TSP2.gif" width="450" height="300">
 
 # Example results file
-<img src="images/comp1_result.tiff" width="450" height="300">
+<img src="images/comp1_result.jpg" width="450" height="300">
