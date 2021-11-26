@@ -16,8 +16,10 @@ The pore area is calculated using opencv, with the following sequence:
 5. Multiply the Diameter by the scale to obtain diameter in microns.
 6. Classify the pore diameter in the pore size histogram bins specified in the main program as a python list.
 7. Add the area of the pore to the total area of the corresponding histogram bin.
-8. Once all the pores have been cycled, calculate the total porosity summing all the areas of the different bins and dividing by the total area of the image (multiply the shape  x and y of the composed image).
-9. Then convert the total porosity and pore size histogram into pandas data frames and save them to a csv file with the name of the fourth image selected by the user.
+8. Draw and fill the area of the pore in the composed color image with the corresponding to the pose color based on its size.
+9. Once all the pores have been cycled, calculate the total porosity summing all the areas of the different bins and dividing by the total area of the image (multiply the shape  x and y of the composed image).
+10. Then convert the total porosity and pore size histogram into pandas data frames and save them to a csv file with the name of the fourth image selected by the user.
+11. Save the color image with all the pores filled with different colors for each pore size bin in the histogram.
 
 # Using the application
 Open the thin_section_porosity_zoom.py, and press **"Open Files"** and select four image files (they must have the same resolution), usually from diferent zones of the Thin Section, then modify the HSV color limits to threshold the blue zones that represent the Thin Section porosity.
@@ -26,3 +28,6 @@ Pore Size Diameter is calculated as the diameter of a circle that has the same a
 
 # Example video
 <img src="images/TSP2.gif" width="450" height="300">
+
+# Example results file
+<img src="images/comp1_result.tiff" width="450" height="300">
